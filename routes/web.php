@@ -5,7 +5,7 @@ use App\Http\Controllers\ArticleController;
 use App\Models\Article;
 
 Route::resource('articles', ArticleController::class);
-Route::get('article/cetak_pdf', [ArticleController::class, 'setak_pdf']);
+Route::get('article/cetak_pdf', [ArticleController::class, 'cetak_pdf']);
 
 /*
 |--------------------------------------------------------------------------
