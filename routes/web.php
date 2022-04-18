@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ArticleController;
 
+Route::resource('articles', ArticleController::class);
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,6 +17,7 @@ use App\Http\Controllers\ArticleController;
 |
 */
 
+
 // Route::get('/', function () {
 //     return view('welcome');
 // });
@@ -21,5 +25,3 @@ use App\Http\Controllers\ArticleController;
 // Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Route::resource('articles', ArticleController::class);
